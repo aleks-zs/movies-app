@@ -1,5 +1,5 @@
 # movies-app
-## Movies Collection
+## Django Movies Collection application
 Web application which presents a collection of great movies
 
 
