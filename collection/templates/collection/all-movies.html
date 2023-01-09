@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_title %}
+All Movies
+{% endblock %}
+
+{% block css_file %}
+<link rel="stylesheet" href="{% static "collection/movie.css" %}">
+<link rel="stylesheet" href="{% static "collection/all-movies.css" %}">
+{% endblock %}
+
+
+{% block content %}
+
+<section id="all-movies">
+    <h2>Movies Collection</h2>
+    <ul>
+        {% for movie in all_movies %}
+            {% include "collection/shared/movie.html" %}
+        {% endfor %}
+    </ul>
+</section>
+
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+My Check List
+{% endblock %}
+
+{% block css_file %}
+<link rel="stylesheet" href="{% static "collection/check-list.css" %}">
+{% endblock %}
+
+{% block content %}
+<section id="stored-movies">
+    {% if not has_movies %}
+        <p>Nothing saved</p>
+    {% endif %}
+    <ul>
+        {% for movie in movies %}
+            <li><a href="{% url "movie-detail-page" movie.slug %}">{{ movie.title }}</a> </li>
+        {% endfor %}
+    </ul>
+</section>
+{% endblock %}

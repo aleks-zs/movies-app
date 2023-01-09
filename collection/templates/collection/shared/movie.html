@@ -1,0 +1,11 @@
+<li>
+    <article class="movie">
+        <a href="{% url "movie-detail-page" movie.slug %}">
+            <img id="img" src="{{ movie.image.url }}" alt="{{ movie.title }}">
+            <div class="movie_content">
+                <h3>{{ movie.title }}</h3>
+                <p>{{ movie.excerpt }}</p>
+            </div>
+        </a>
+    </article>
+</li>
