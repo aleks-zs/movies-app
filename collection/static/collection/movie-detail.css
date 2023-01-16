@@ -1,5 +1,5 @@
 #main-navigation {
-  background-color: #390281;
+  background: linear-gradient(to right top, #2C73D2, #390281);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
 
@@ -9,7 +9,7 @@
   width: 90%;
   max-width: 90rem;
   border-radius: 16px;
-  background-color: #5706c0;
+  background: linear-gradient(to right top, #2C73D2, #390281);
   position: relative;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   height: 22rem;
@@ -64,12 +64,14 @@
   font: inherit;
   color: white;
   cursor: pointer;
+  margin-left: 0.25rem;
 }
 
 #check-list button:hover,
 #check-list button:active {
   background-color: white;
-  color: #390281;
+  color: #2C73D2;
+
 }
 
 main {
@@ -87,6 +89,7 @@ main {
   color: #390281;
   padding: 0.5rem 1rem;
   border-radius: 8px;
+  margin-left: 0.25rem;
 }
 
 #comment-form {
@@ -101,7 +104,7 @@ main {
 
 #comment-form button {
   font: inherit;
-  background-color: #390281;
+  background: linear-gradient(to right top, #2C73D2, #390281);
   color: white;
   border: 1px solid #390281;
   padding: 0.5rem 1.5rem;
