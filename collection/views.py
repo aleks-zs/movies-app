@@ -60,7 +60,7 @@ class SingleMovieView(View):
             comment = comment_form.save(commit=False)
             comment.movie = movie
             comment.save()
-            return HttpResponseRedirect(reverse("movie-detail-page", args=[slug]))
+            return HttpResponseRedirect(reverse("movie-detail-page", args=[slug])) # noqa
 
         context = {
             "movie": movie,
